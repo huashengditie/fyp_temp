@@ -1,0 +1,1303 @@
+[
+  {
+    "id": "neg_35d3a837",
+    "category": "Neg_Enz",
+    "query": "Rank the catalytic affinity between Glucose and ATP.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_7b12cf71",
+    "category": "EnzRank",
+    "query": "Is enzyme MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG compatible with C00497?",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG",
+      "substrate": "C00497"
+    }
+  },
+  {
+    "id": "db_3997f882",
+    "category": "Database",
+    "query": "Check UniProt O98765",
+    "expected_tool": "entity_validation_tool",
+    "expected_args": {
+      "entity_id": "O98765",
+      "db_type": "UniProt"
+    }
+  },
+  {
+    "id": "neg_958dc79e",
+    "category": "Neg_DB",
+    "query": "Search KEGG for the reason why glycolysis produces ATP.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "db_3d581b52",
+    "category": "Database",
+    "query": "Check UniProt O00124",
+    "expected_tool": "entity_validation_tool",
+    "expected_args": {
+      "entity_id": "O00124",
+      "db_type": "UniProt"
+    }
+  },
+  {
+    "id": "neg_0a8e3b1f",
+    "category": "Neg_Gen",
+    "query": "Who is the current president of the United States?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "dg_19cfa448",
+    "category": "dGPredictor",
+    "query": "I need the dG value for: C01083 + C00001 <=> 2 C00031",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C01083 + C00001 <=> 2 C00031"
+    }
+  },
+  {
+    "id": "me_292f52f3",
+    "category": "MESearch",
+    "query": "Find the alternative engineering designs for producing (R)-acetoin in iML1515 using D-glucose.",
+    "expected_tool": "me_search_tool",
+    "expected_args": {
+      "target_chemical": "(R)-acetoin",
+      "host": "iML1515"
+    }
+  },
+  {
+    "id": "neg_5549ad41",
+    "category": "Neg_dG",
+    "query": "What is the standard free energy of sunlight?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "multi_mix_e7e6809f",
+    "category": "MultiTool_Mixed",
+    "query": "dG for C15524 + C00001 <=> C02137 + C00010 and rank MQTRILLVGGAGFIGSHLCE... for C00149",
+    "expected_tools": [
+      "dg_predictor_tool",
+      "enzrank_tool"
+    ],
+    "expected_args_list": [
+      {
+        "reaction": "C15524 + C00001 <=> C02137 + C00010"
+      },
+      {
+        "enzyme": "MQTRILLVGGAGFIGSHLCE...",
+        "substrate": "C00149"
+      }
+    ]
+  },
+  {
+    "id": "db_4a754cc8",
+    "category": "Database",
+    "query": "Check UniProt P54321",
+    "expected_tool": "entity_validation_tool",
+    "expected_args": {
+      "entity_id": "P54321",
+      "db_type": "UniProt"
+    }
+  },
+  {
+    "id": "neg_a4e5aa3f",
+    "category": "Neg_ME",
+    "query": "What is the theoretical maximum yield of fumarate in a generic bacterial cell?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_5fa60e6f",
+    "category": "EnzRank",
+    "query": "Run EnzRank for protein MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN on C00149",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "multi_mix_25fb6272",
+    "category": "MultiTool_Mixed",
+    "query": "dG for C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011 and rank MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN for C00149",
+    "expected_tools": [
+      "dg_predictor_tool",
+      "enzrank_tool"
+    ],
+    "expected_args_list": [
+      {
+        "reaction": "C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011"
+      },
+      {
+        "enzyme": "MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN",
+        "substrate": "C00149"
+      }
+    ]
+  },
+  {
+    "id": "neg_6be0cffb",
+    "category": "Neg_dG",
+    "query": "Calculate the thermodynamic value of ATP alone.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "cap_9e93ca6b",
+    "category": "Capability",
+    "query": "Tell me about your skills.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_5430bc5e",
+    "category": "EnzRank",
+    "query": "Check affinity of MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG to C00497",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG",
+      "substrate": "C00497"
+    }
+  },
+  {
+    "id": "cap_64648360",
+    "category": "Capability",
+    "query": "What kind of queries can I ask you?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_4db4cc5d",
+    "category": "Neg_dG",
+    "query": "Calculate dG for Glucose + ATP <=> G6P + ADP",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_260ff2ae",
+    "category": "Neg_Gen",
+    "query": "How do I fix a flat tire on my car?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "dg_099db18a",
+    "category": "dGPredictor",
+    "query": "Estimate the Gibbs free energy for C01083 + C00001 <=> 2 C00031",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C01083 + C00001 <=> 2 C00031"
+    }
+  },
+  {
+    "id": "neg_a3af2f1c",
+    "category": "Neg_Enz",
+    "query": "Run EnzRank on protein MTKRVLL.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "greet_0eeb7ff2",
+    "category": "Greeting",
+    "query": "Hi there.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "me_5347968d",
+    "category": "MESearch",
+    "query": "I want to produce itaconate. What is the best host and maximum theoretical yield?",
+    "expected_tool": "me_search_tool",
+    "expected_args": {
+      "target_chemical": "itaconate",
+      "host": "iJO1366"
+    }
+  },
+  {
+    "id": "db_88a4c9b9",
+    "category": "Database",
+    "query": "Search for Succinate",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Succinate",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "neg_a6f134d9",
+    "category": "Neg_DB",
+    "query": "Validate UniProt ID: NULL.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_033a4eb2",
+    "category": "Neg_Gen",
+    "query": "Can you translate 'hi' into Spanish?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "dg_dde20085",
+    "category": "dGPredictor",
+    "query": "Calculate dG for reaction: C15524 + C00001 <=> C02137 + C00010",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C15524 + C00001 <=> C02137 + C00010"
+    }
+  },
+  {
+    "id": "multi_mix_ba58e8e8",
+    "category": "MultiTool_Mixed",
+    "query": "dG for C00092 + C00001 <=> C00031 + C00009 and rank MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII for C00022",
+    "expected_tools": [
+      "dg_predictor_tool",
+      "enzrank_tool"
+    ],
+    "expected_args_list": [
+      {
+        "reaction": "C00092 + C00001 <=> C00031 + C00009"
+      },
+      {
+        "enzyme": "MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII",
+        "substrate": "C00022"
+      }
+    ]
+  },
+  {
+    "id": "dg_29b2dbc9",
+    "category": "dGPredictor",
+    "query": "Calculate dG for reaction: C00091 + C00149 <=> C00042 + C04348",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00091 + C00149 <=> C00042 + C04348"
+    }
+  },
+  {
+    "id": "neg_561ea208",
+    "category": "Neg_ME",
+    "query": "Find alternative engineering designs for producing monoclonal antibodies in Saccharomyces cerevisiae.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_31e4d8c7",
+    "category": "EnzRank",
+    "query": "Enzyme interaction level: MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN + C00149",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "enz_7836b3c4",
+    "category": "EnzRank",
+    "query": "Evaluate efficiency of MQTRILLVGGAGFIGSHLCE... with C00149",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MQTRILLVGGAGFIGSHLCE...",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "neg_fcbd1a44",
+    "category": "Neg_DB",
+    "query": "Search database for [Insert Compound Here].",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_66bcfa1a",
+    "category": "Neg_DB",
+    "query": "Query the database for my novel synthesized compound.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "db_23a10923",
+    "category": "Database",
+    "query": "Check UniProt P68871",
+    "expected_tool": "entity_validation_tool",
+    "expected_args": {
+      "entity_id": "P68871",
+      "db_type": "UniProt"
+    }
+  },
+  {
+    "id": "neg_2759a346",
+    "category": "Neg_ME",
+    "query": "Calculate the theoretical yield of ethanol in Synechocystis sp. PCC 6803.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_d4b20a86",
+    "category": "EnzRank",
+    "query": "Rank enzyme MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG for substrate C00497",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG",
+      "substrate": "C00497"
+    }
+  },
+  {
+    "id": "neg_7c517aa5",
+    "category": "Neg_Enz",
+    "query": "EnzRank sequence='ttaccagtctcacgatgttagattcgtat' substrate=C00001",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_081944cc",
+    "category": "Neg_Enz",
+    "query": "Can you rank the affinity of this enzyme without knowing the substrate?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_e35c0e67",
+    "category": "Neg_Gen",
+    "query": "What is the weather like today?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "dg_480aeaf7",
+    "category": "dGPredictor",
+    "query": "Thermodynamic profile for C00091 + C00149 <=> C00042 + C04348",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00091 + C00149 <=> C00042 + C04348"
+    }
+  },
+  {
+    "id": "enz_d8c3dbb7",
+    "category": "EnzRank",
+    "query": "Run EnzRank for protein MQTRILLVGGAGFIGSHLCE... on C00149",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MQTRILLVGGAGFIGSHLCE...",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "db_abfc0d79",
+    "category": "Database",
+    "query": "Check UniProt Q12345",
+    "expected_tool": "entity_validation_tool",
+    "expected_args": {
+      "entity_id": "Q12345",
+      "db_type": "UniProt"
+    }
+  },
+  {
+    "id": "db_cd65477e",
+    "category": "Database",
+    "query": "Validate Acyl-CoA",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Acyl-CoA",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "db_11bcbf50",
+    "category": "Database",
+    "query": "Check UniProt P12345",
+    "expected_tool": "entity_validation_tool",
+    "expected_args": {
+      "entity_id": "P12345",
+      "db_type": "UniProt"
+    }
+  },
+  {
+    "id": "db_c053f269",
+    "category": "Database",
+    "query": "Lookup Fructose",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Fructose",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "multi_enz_c8b2cb22",
+    "category": "MultiTool_Same",
+    "query": "Rank MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN with C00149 and C00022",
+    "expected_tools": [
+      "enzrank_tool",
+      "enzrank_tool"
+    ],
+    "expected_args_list": [
+      {
+        "enzyme": "MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN",
+        "substrate": "C00149"
+      },
+      {
+        "enzyme": "MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN",
+        "substrate": "C00022"
+      }
+    ]
+  },
+  {
+    "id": "neg_8bf4083b",
+    "category": "Neg_ME",
+    "query": "What is the best engineering strategy for producing malate in Arabidopsis thaliana?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "dg_e3670f3e",
+    "category": "dGPredictor",
+    "query": "Predict thermodynamics for C00103 + C00001 <=> C00031 + C00009",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00103 + C00001 <=> C00031 + C00009"
+    }
+  },
+  {
+    "id": "neg_195bdf8b",
+    "category": "Neg_Enz",
+    "query": "Is enzyme 'ACTGACTG' compatible with C00001?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "cap_57d92f3a",
+    "category": "Capability",
+    "query": "How can you help me with biology?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_a7d45bad",
+    "category": "Neg_DB",
+    "query": "Is KEGG ID R000 valid?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_546620a3",
+    "category": "EnzRank",
+    "query": "Is enzyme MQTRILLVGGAGFIGSHLCE... compatible with C00149?",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MQTRILLVGGAGFIGSHLCE...",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "db_3fe4614a",
+    "category": "Database",
+    "query": "KEGG info on Fructose",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Fructose",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "neg_53350ed4",
+    "category": "Neg_dG",
+    "query": "Calculate the dG for pure water.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_42d45ed4",
+    "category": "Neg_ME",
+    "query": "Calculate the yield of itaconate in [Insert Host Organism].",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_2040c76b",
+    "category": "Neg_ME",
+    "query": "What is the maximum theoretical yield of CRISPR Cas9 protein in Escherichia coli?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_e3342671",
+    "category": "EnzRank",
+    "query": "Check affinity of MQTRILLVGGAGFIGSHLCE... to C00149",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MQTRILLVGGAGFIGSHLCE...",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "cap_0cc27184",
+    "category": "Capability",
+    "query": "How do you work?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_ebf3dc80",
+    "category": "Neg_ME",
+    "query": "Optimize Saccharomyces cerevisiae to maximize its cellular volume.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "db_acb55dab",
+    "category": "Database",
+    "query": "Check UniProt P00533",
+    "expected_tool": "entity_validation_tool",
+    "expected_args": {
+      "entity_id": "P00533",
+      "db_type": "UniProt"
+    }
+  },
+  {
+    "id": "dg_8ec1eb6a",
+    "category": "dGPredictor",
+    "query": "Calculate dG for reaction: C00103 + C00001 <=> C00031 + C00009",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00103 + C00001 <=> C00031 + C00009"
+    }
+  },
+  {
+    "id": "multi_dg_56c380fa",
+    "category": "MultiTool_Same",
+    "query": "Calculate Gibbs for C00092 + C00001 <=> C00031 + C00009 and C00103 + C00001 <=> C00031 + C00009",
+    "expected_tools": [
+      "dg_predictor_tool",
+      "dg_predictor_tool"
+    ],
+    "expected_args_list": [
+      {
+        "reaction": "C00092 + C00001 <=> C00031 + C00009"
+      },
+      {
+        "reaction": "C00103 + C00001 <=> C00031 + C00009"
+      }
+    ]
+  },
+  {
+    "id": "db_d51acc6b",
+    "category": "Database",
+    "query": "Validate Citrate",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Citrate",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "greet_1a82a9ef",
+    "category": "Greeting",
+    "query": "Good evening.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_871cc03d",
+    "category": "Neg_Enz",
+    "query": "Evaluate protein folding for sequence MKTV...",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "multi_mix_4227a72a",
+    "category": "MultiTool_Mixed",
+    "query": "dG for C00103 + C00001 <=> C00031 + C00009 and rank MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG for C00497",
+    "expected_tools": [
+      "dg_predictor_tool",
+      "enzrank_tool"
+    ],
+    "expected_args_list": [
+      {
+        "reaction": "C00103 + C00001 <=> C00031 + C00009"
+      },
+      {
+        "enzyme": "MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG",
+        "substrate": "C00497"
+      }
+    ]
+  },
+  {
+    "id": "enz_25c869e6",
+    "category": "EnzRank",
+    "query": "Run EnzRank for protein MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG on C00497",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG",
+      "substrate": "C00497"
+    }
+  },
+  {
+    "id": "neg_436c0c4e",
+    "category": "Neg_Gen",
+    "query": "What is the current stock price of Apple?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "greet_f16e57fb",
+    "category": "Greeting",
+    "query": "Hello AI.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_afb3d1f2",
+    "category": "EnzRank",
+    "query": "Compatibility score between MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII and C00022",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII",
+      "substrate": "C00022"
+    }
+  },
+  {
+    "id": "me_9bda74ab",
+    "category": "MESearch",
+    "query": "What is the maximum yield of fumarate in iML1515?",
+    "expected_tool": "me_search_tool",
+    "expected_args": {
+      "target_chemical": "fumarate",
+      "host": "iML1515"
+    }
+  },
+  {
+    "id": "dg_eecaac81",
+    "category": "dGPredictor",
+    "query": "Spontaneity of C01083 + C00001 <=> 2 C00031",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C01083 + C00001 <=> 2 C00031"
+    }
+  },
+  {
+    "id": "db_00eb50f2",
+    "category": "Database",
+    "query": "KEGG info on Citrate",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Citrate",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "neg_a30ced5e",
+    "category": "Neg_ME",
+    "query": "Design a metabolic pathway for citrate production in Methanococcus maripaludis.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "dg_cb8272ca",
+    "category": "dGPredictor",
+    "query": "I need the dG value for: C00022 + C00001 <=> C00031 + C00011",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00022 + C00001 <=> C00031 + C00011"
+    }
+  },
+  {
+    "id": "enz_70a9f40e",
+    "category": "EnzRank",
+    "query": "Compatibility score between MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN and C00149",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "enz_9e3f0cb2",
+    "category": "EnzRank",
+    "query": "Check affinity of MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN to C00149",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "neg_607b2376",
+    "category": "Neg_Gen",
+    "query": "What is the result of 2 + 2?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "db_42bd2f14",
+    "category": "Database",
+    "query": "Search for Acyl-CoA",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Acyl-CoA",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "dg_bb0f1e46",
+    "category": "dGPredictor",
+    "query": "Thermodynamic profile for C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011"
+    }
+  },
+  {
+    "id": "neg_41d89a2d",
+    "category": "Neg_DB",
+    "query": "Fetch information about Uniprot ID 123456.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "cap_b7e669d3",
+    "category": "Capability",
+    "query": "What can you do?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "greet_dff5fc17",
+    "category": "Greeting",
+    "query": "Good morning assistant.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "me_93b7c441",
+    "category": "MESearch",
+    "query": "List the target reactions for producing propan-2-ol.",
+    "expected_tool": "me_search_tool",
+    "expected_args": {
+      "target_chemical": "propan-2-ol",
+      "host": "iJO1366"
+    }
+  },
+  {
+    "id": "dg_bed76a6f",
+    "category": "dGPredictor",
+    "query": "Predict thermodynamics for C00092 + C00001 <=> C00031 + C00009",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00092 + C00001 <=> C00031 + C00009"
+    }
+  },
+  {
+    "id": "neg_c4b0a613",
+    "category": "Neg_Enz",
+    "query": "Check enzyme specificity.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_34ca8d1a",
+    "category": "Neg_Enz",
+    "query": "Rank enzyme MKTV... for substrate 'Sugar'",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "db_66944855",
+    "category": "Database",
+    "query": "Lookup Glucose",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Glucose",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "neg_548908c5",
+    "category": "Neg_DB",
+    "query": "Look up the UniProt sequence",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "dg_868ccea2",
+    "category": "dGPredictor",
+    "query": "Calculate dG for reaction: C00267 + C00001 <=> C00011 + C00042",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00267 + C00001 <=> C00011 + C00042"
+    }
+  },
+  {
+    "id": "neg_d3aed1b6",
+    "category": "Neg_dG",
+    "query": "What is the delta G of C01083 + C00001 <=> 2C00031?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_ecc11e5a",
+    "category": "EnzRank",
+    "query": "Compatibility score between MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG and C00497",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG",
+      "substrate": "C00497"
+    }
+  },
+  {
+    "id": "neg_d53211bb",
+    "category": "Neg_Gen",
+    "query": "Write a short poem about cute cats.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "greet_cf0b2ba5",
+    "category": "Greeting",
+    "query": "Greetings.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "greet_cdc50bb0",
+    "category": "Greeting",
+    "query": "Is anyone there?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_9a3b6566",
+    "category": "EnzRank",
+    "query": "Will MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG catalyze C00497?",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG",
+      "substrate": "C00497"
+    }
+  },
+  {
+    "id": "enz_eaec01d2",
+    "category": "EnzRank",
+    "query": "Compatibility score between MQTRILLVGGAGFIGSHLCE... and C00149",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MQTRILLVGGAGFIGSHLCE...",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "dg_e63b61a8",
+    "category": "dGPredictor",
+    "query": "What is the delta G of C00267 + C00001 <=> C00011 + C00042?",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00267 + C00001 <=> C00011 + C00042"
+    }
+  },
+  {
+    "id": "cap_a11e540f",
+    "category": "Capability",
+    "query": "Show me your functions.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_2b5593a2",
+    "category": "Neg_dG",
+    "query": "What is the dG of compound C00031?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "dg_06a5bf0c",
+    "category": "dGPredictor",
+    "query": "Estimate the Gibbs free energy for C00091 + C00149 <=> C00042 + C04348",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00091 + C00149 <=> C00042 + C04348"
+    }
+  },
+  {
+    "id": "neg_957f286b",
+    "category": "Neg_dG",
+    "query": "Find the Gibbs free energy of C00001 + C00002 -> C00003",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_aafd0e0f",
+    "category": "Neg_dG",
+    "query": "Determine the Gibbs free energy for: [Insert Rxn]",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_798f8f6c",
+    "category": "EnzRank",
+    "query": "Enzyme interaction level: MQTRILLVGGAGFIGSHLCE... + C00149",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MQTRILLVGGAGFIGSHLCE...",
+      "substrate": "C00149"
+    }
+  },
+  {
+    "id": "dg_0d0da7e3",
+    "category": "dGPredictor",
+    "query": "Estimate the Gibbs free energy for C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011"
+    }
+  },
+  {
+    "id": "dg_2a49d1f6",
+    "category": "dGPredictor",
+    "query": "Predict thermodynamics for C00091 + C00149 <=> C00042 + C04348",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00091 + C00149 <=> C00042 + C04348"
+    }
+  },
+  {
+    "id": "multi_enz_abe419d7",
+    "category": "MultiTool_Same",
+    "query": "Rank MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG with C00149 and C00022",
+    "expected_tools": [
+      "enzrank_tool",
+      "enzrank_tool"
+    ],
+    "expected_args_list": [
+      {
+        "enzyme": "MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG",
+        "substrate": "C00149"
+      },
+      {
+        "enzyme": "MKYFSAAVIPGDGIGPEVMEVGMSLLQAIGDIHGGLSFEAESFPWNCRYYLQHGRMMPEDGLERLRPFDVILLGAIGAPGVPDHISVWELILPIRRSFQQYVNLRPIKLLRGLESPLRGKGHEHLDFVVVRENTEGEYSNMGGRLHVGTPYEMAMQNNVFTRYGTERIIRYAFELAQATGKTRLTAATKSNGINHSMPFWDEIVKEISLHYPNIQTSLIHIDALAAFFVSRPEAFDVVVASNLFGDILTDLGAAVVGGLGLAPSGNINPEKTYPSMFEPIHGSAPDIAGRGIANPIATIWSISMMLDHLGERELGRLVLDCIEEVLVEGKVRTPDIGGKATTQEMGKAILAQLYRRGG",
+        "substrate": "C00022"
+      }
+    ]
+  },
+  {
+    "id": "neg_6a5400ce",
+    "category": "Neg_ME",
+    "query": "Find the maximum theoretical yield of succinate in Homo sapiens.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "cap_d974b604",
+    "category": "Capability",
+    "query": "What tasks can you perform?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "db_79f610a8",
+    "category": "Database",
+    "query": "Find Citrate",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Citrate",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "cap_f4a2df60",
+    "category": "Capability",
+    "query": "Give me a manual of your features.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_e42ea971",
+    "category": "EnzRank",
+    "query": "Check affinity of MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII to C00022",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII",
+      "substrate": "C00022"
+    }
+  },
+  {
+    "id": "neg_94ffaf59",
+    "category": "Neg_Gen",
+    "query": "What is the capital city of France?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_ad0993ec",
+    "category": "EnzRank",
+    "query": "Run EnzRank for protein MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII on C00022",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII",
+      "substrate": "C00022"
+    }
+  },
+  {
+    "id": "dg_4b2885a3",
+    "category": "dGPredictor",
+    "query": "What is the delta G of C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011?",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011"
+    }
+  },
+  {
+    "id": "neg_fcd11ee4",
+    "category": "Neg_dG",
+    "query": "Compute the dG.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "greet_5f1d5d63",
+    "category": "Greeting",
+    "query": "Hi, how are you?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_1ce6c0ef",
+    "category": "Neg_Enz",
+    "query": "Score for Enzyme A",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "multi_enz_fb8ffff3",
+    "category": "MultiTool_Same",
+    "query": "Rank MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII with C00149 and C00022",
+    "expected_tools": [
+      "enzrank_tool",
+      "enzrank_tool"
+    ],
+    "expected_args_list": [
+      {
+        "enzyme": "MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII",
+        "substrate": "C00149"
+      },
+      {
+        "enzyme": "MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII",
+        "substrate": "C00022"
+      }
+    ]
+  },
+  {
+    "id": "neg_3dcfec1a",
+    "category": "Neg_Gen",
+    "query": "Where can I find the best pizza recipe?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "dg_34d3a7a6",
+    "category": "dGPredictor",
+    "query": "I need the dG value for: C00092 + C00001 <=> C00031 + C00009",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00092 + C00001 <=> C00031 + C00009"
+    }
+  },
+  {
+    "id": "multi_mix_a5fc44e6",
+    "category": "MultiTool_Mixed",
+    "query": "dG for C01083 + C00001 <=> 2 C00031 and rank MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN for C00149",
+    "expected_tools": [
+      "dg_predictor_tool",
+      "enzrank_tool"
+    ],
+    "expected_args_list": [
+      {
+        "reaction": "C01083 + C00001 <=> 2 C00031"
+      },
+      {
+        "enzyme": "MTKRVLVTGGAGFLGSHLCERLLSEGHEVICLDNFGSGRRKNIKEFEDHPSFKVNDRDVRISESLPSVDRIYHLASRASPADFTQFPVNIALANTQGTRRLLDQARACDARMVFASTSEVYGDPKVHPQPETYTGNVNIRGARGCYDESKRFGETLTVAYQRKYDVDARTVRIFNTYGPRMRPDDGRVVPTFVTQALRGDDLTIYGDGEQTRSFCYVDDLIEGLISLMRVDNPEHNVYNIGKENERTIKELAYEVLGLTDTESDIVYEPLPEDDPGQRRPDITRAKTELDWEPKISLREGLEDTITYFDN",
+        "substrate": "C00149"
+      }
+    ]
+  },
+  {
+    "id": "dg_34981be8",
+    "category": "dGPredictor",
+    "query": "What is the delta G of C15524 + C00001 <=> C02137 + C00010?",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C15524 + C00001 <=> C02137 + C00010"
+    }
+  },
+  {
+    "id": "greet_6aee3bb2",
+    "category": "Greeting",
+    "query": "Hello!",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "greet_228f16ec",
+    "category": "Greeting",
+    "query": "Yo.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "me_a20fefc8",
+    "category": "MESearch",
+    "query": "Theoretical yield and engineering strategy for (R)-acetoin.",
+    "expected_tool": "me_search_tool",
+    "expected_args": {
+      "target_chemical": "(R)-acetoin",
+      "host": "iML1515"
+    }
+  },
+  {
+    "id": "cap_e38f81b0",
+    "category": "Capability",
+    "query": "List your available tools.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_61e40702",
+    "category": "Neg_Enz",
+    "query": "Evaluate the interaction between two proteins MDH1 and LDHA.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "enz_5e4fb544",
+    "category": "EnzRank",
+    "query": "Evaluate efficiency of MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII with C00022",
+    "expected_tool": "enzrank_tool",
+    "expected_args": {
+      "enzyme": "MKRILVAGGAGFIGSHLCERLVNEGHYVVCLDNFFTGNKKKVEQLLNNPRFEIAKHDVIEPYFNEVDEIYNLACPASPIHYQVDPIKTIKTSVLGAMNMLGLAKKTNAKILQASTSEVYGEPEVHPQYEEYWGNVNPIGKRSCYNEGKRCAESLFINYHSQHQTKIKIIRIFNTYGPKMDINDGRVISNFVIQALKGKDITIYGDGKQTRSFQYVDDLVEGMIRMMNTDDSFTGPVNIGNPEEYTMLELVSFIIEMTQSKSKLIFLPLPEDDPKRRRPNIELAKKELNNWEPKIKLREGLIKTINYFEKII",
+      "substrate": "C00022"
+    }
+  },
+  {
+    "id": "cap_d06750b8",
+    "category": "Capability",
+    "query": "What are your capabilities?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_60cfe985",
+    "category": "Neg_dG",
+    "query": "Thermodynamics of reaction A + B",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "db_0dcfb720",
+    "category": "Database",
+    "query": "Find Malate",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Malate",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "db_863024f6",
+    "category": "Database",
+    "query": "Lookup Proline",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Proline",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "multi_dg_82b91e44",
+    "category": "MultiTool_Same",
+    "query": "Calculate Gibbs for C01083 + C00001 <=> 2 C00031 and C00092 + C00001 <=> C00031 + C00009",
+    "expected_tools": [
+      "dg_predictor_tool",
+      "dg_predictor_tool"
+    ],
+    "expected_args_list": [
+      {
+        "reaction": "C01083 + C00001 <=> 2 C00031"
+      },
+      {
+        "reaction": "C00092 + C00001 <=> C00031 + C00009"
+      }
+    ]
+  },
+  {
+    "id": "dg_9fb0edd1",
+    "category": "dGPredictor",
+    "query": "I need the dG value for: C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011",
+    "expected_tool": "dg_predictor_tool",
+    "expected_args": {
+      "reaction": "C00148 + C00026 + C00007 <=> C01157 + C00042 + C00011"
+    }
+  },
+  {
+    "id": "greet_7678c37d",
+    "category": "Greeting",
+    "query": "Hey bot!",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_9de8b1ae",
+    "category": "Neg_ME",
+    "query": "What is the optimal cultivation temperature for Bacillus subtilis?",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_8bcd2244",
+    "category": "Neg_DB",
+    "query": "Validate KEGG ID C031.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "neg_bc69bf80",
+    "category": "Neg_Gen",
+    "query": "Tell me a funny joke.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "db_7e96f39e",
+    "category": "Database",
+    "query": "KEGG info on Succinate",
+    "expected_tool": "entity_search_tool",
+    "expected_args": {
+      "query": "Succinate",
+      "category": "compound"
+    }
+  },
+  {
+    "id": "neg_fd2c624c",
+    "category": "Neg_DB",
+    "query": "Search for compound glucose-8-phosphate.",
+    "expected_tool": null,
+    "expected_args": {}
+  },
+  {
+    "id": "db_ce4e4cdb",
+    "category": "Database",
+    "query": "Check UniProt Q9WUA6",
+    "expected_tool": "entity_validation_tool",
+    "expected_args": {
+      "entity_id": "Q9WUA6",
+      "db_type": "UniProt"
+    }
+  },
+  {
+    "id": "neg_e6565609",
+    "category": "Neg_DB",
+    "query": "Check KEGG ID 12345.",
+    "expected_tool": null,
+    "expected_args": {}
+  }
+]

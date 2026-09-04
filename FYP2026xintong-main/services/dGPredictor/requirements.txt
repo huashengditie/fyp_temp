@@ -1,0 +1,14 @@
+pandas
+matplotlib
+scikit-learn
+streamlit
+pulp
+fastapi
+uvicorn
+pydantic
+tqdm
+rdkit
+
+openbabel-wheel; sys_platform == 'linux'
+
+
