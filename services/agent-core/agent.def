@@ -1,0 +1,22 @@
+Bootstrap: docker
+From: python:3.10-slim
+
+%files
+    requirements.txt /requirements.txt
+
+%post
+    export DEBIAN_FRONTEND=noninteractive
+    
+    pip install --no-cache-dir --upgrade pip
+    pip install --no-cache-dir -r /requirements.txt
+    
+    echo "installing langgraph"
+    pip list | grep langgraph
+
+%environment
+    export PYTHONUNBUFFERED=1
+    export PYTHONPATH=/app
+
+%runscript
+    cd /app
+    exec uvicorn main:app --host 0.0.0.0 --port 8081
